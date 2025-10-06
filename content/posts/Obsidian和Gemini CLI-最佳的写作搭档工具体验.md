@@ -1,8 +1,8 @@
 ---
-title: Obsidian+Gemini CLI,最佳的写作搭档工具体验
+title: Obsidian和Gemini CLI-最佳的写作搭档工具体验
 subtitle: ""
-date: 2025-10-06T12:50:24+08:00
-lastmod: 2025-10-06T12:50:24+08:00
+date: 2025-10-06T09:50:24+08:00
+lastmod: 2025-10-06T09:50:24+08:00
 draft: false
 author: CRIO
 authorLink: ""
