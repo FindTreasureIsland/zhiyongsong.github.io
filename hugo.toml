@@ -1,10 +1,10 @@
-baseURL = "http://look4ti.github.io/"
+baseURL = "http://findtreasureisland.github.io/"
 
 # 更改使用 Hugo 构建网站时使用的默认主题
 theme = "LoveIt"
 
 # 网站标题
-title = "Look4ti,寻找金银岛"
+title = "Find TreasureIsland,寻找金银岛"
 
 # 网站语言, 仅在这里 CN 大写 ["en", "zh-CN", "fr", "pl", ...]
 languageCode = "zh-CN"
@@ -87,11 +87,11 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
   dateFormat = "2006-01-02"
 
   # 网站标题, 用于 Open Graph 和 Twitter Cards
-  title = "Look4ti,寻找金银岛"
+  title = "Find TreasureIsland,寻找金银岛"
 
   # 网站描述, 用于 RSS, SEO, Open Graph 和 Twitter Cards
 
-  description = "Look4ti，记录路上的思想"
+  description = "Find TreasureIsland，记录路上的思想"
 
   # 网站图片, 用于 Open Graph 和 Twitter Cards
   images = [""]
@@ -100,7 +100,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
   [params.author]
     name = "CRIO"
     email = "alaiszy@gmail.com"
-    link = "http://look4ti.github.io"
+    link = "http://findtreasureisland.github.io"
 
   # 页面头部导航栏配置
   [params.header]
@@ -117,7 +117,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
       logo = ""
 
       # 标题名称
-      name = "Look4ti金银岛"
+      name = "Find TreasureIsland金银岛"
 
       # 你可以在名称 (允许 HTML 格式) 之前添加其他信息, 例如图标
       pre = "<img src=\"/images/logoicon.png\"  alt=\"Logo\" style=\"width: 48px; height: auto;vertical-align:middle;\">"
@@ -179,7 +179,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
   #  应用图标配置
   [params.app]
     # 当添加到 iOS 主屏幕或者 Android 启动器时的标题, 覆盖默认标题
-    title = "Look4ti金银岛"
+    title = "Find TreasureIsland金银岛"
 
     # 是否隐藏网站图标资源链接
     noFavicon = false
@@ -244,7 +244,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
       avatarURL = "/images/avatar.png"
 
       #  主页显示的网站标题 (支持 HTML 格式)
-      title = "Look4ti"
+      title = "Find TreasureIsland"
 
       # 主页显示的网站副标题 (允许 HTML 格式)
       subtitle = "寻找金银岛，记录我们一路上的所思所想。"
@@ -272,7 +272,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
 
   # 作者的社交信息设置
   [params.social]
-    GitHub = "https://github.com/look4ti"
+    GitHub = "https://github.com/findtreasureisland"
     Linkedin = ""
     X = "https://x.com/splitwrite"
     Reddit = "https://www.reddit.com/user/ZhiyongSong/"
