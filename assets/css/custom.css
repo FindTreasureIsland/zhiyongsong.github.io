@@ -44,14 +44,14 @@ body:has(.landing-home) #main-content > article.landing-home > section {
 }
 
 .landing-title-logo .landing-logo {
-  height: 0.72em;
-  width: 0.72em;
+  height: 1.08em;
+  width: 1.08em;
   flex-shrink: 0;
 }
 
 @media (min-width: 640px) {
   .landing-title-logo .landing-logo {
-    height: 0.78em;
-    width: 0.78em;
+    height: 1.17em;
+    width: 1.17em;
   }
 }
