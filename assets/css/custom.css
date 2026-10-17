@@ -34,3 +34,24 @@ body:has(.landing-home) > header {
 body:has(.landing-home) #main-content > article.landing-home > section {
   padding-top: 7rem;
 }
+
+/* 首页大标题前的 GIF 图标：跟随标题字号缩放 */
+.landing-title-logo {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3em;
+}
+
+.landing-title-logo .landing-logo {
+  height: 0.72em;
+  width: 0.72em;
+  flex-shrink: 0;
+}
+
+@media (min-width: 640px) {
+  .landing-title-logo .landing-logo {
+    height: 0.78em;
+    width: 0.78em;
+  }
+}
