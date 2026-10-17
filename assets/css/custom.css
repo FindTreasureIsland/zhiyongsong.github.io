@@ -78,3 +78,44 @@ body:has(.landing-home) #main-content > article.landing-home > section {
 .article-content blockquote {
   text-align: left;
 }
+
+/* ===== 统一链接交互：悬停时变为品牌橙并加粗 ===== */
+:root {
+  --link-hover: #f59800;
+}
+
+/* 正文内链接 */
+.article-content a:hover,
+.article-content a:hover * {
+  color: var(--link-hover);
+  font-weight: 700;
+}
+
+/* 顶部导航、页脚、大纲、标签、分类、分页等所有站内链接 */
+header a:hover,
+header a:hover *,
+footer a:hover,
+footer a:hover *,
+#TableOfContents a:hover,
+.toc-inside a:hover,
+.taxonomy a:hover,
+.pagination a:hover,
+article a:hover:not(.article-content a) {
+  color: var(--link-hover);
+  font-weight: 700;
+}
+
+/* 卡片与列表标题 */
+.article-link a:hover,
+.article-link a:hover *,
+.article-card a:hover,
+.article-card a:hover * {
+  color: var(--link-hover);
+  font-weight: 700;
+}
+
+/* 按钮类元素保持自身样式 */
+header button:hover,
+footer button:hover {
+  color: var(--link-hover);
+}
