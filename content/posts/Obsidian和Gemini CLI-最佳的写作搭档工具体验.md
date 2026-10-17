@@ -7,6 +7,7 @@ draft: false
 author: CRIO
 authorLink: ""
 description: ""
+summary: "我以前使用Notion较多，之前对于Obsidian并不是太感冒。但是后来发现Notion很多AI相关功能都要收费，且当时Notion尚不支持离线模式，后来就逐渐开始尝试使用Obsidian来进行Markdown写作。"
 license: ""
 images: []
 tags:

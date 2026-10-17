@@ -7,6 +7,7 @@ draft: false
 author: CRIO
 authorLink: ""
 description: ""
+summary: "目前我们正在开始分析和开发 splitwriter 的提示词了，在完成第一版的提示词后，激发了我对一些优秀的 AI 工具的提示词长什么样的兴趣。 因此一方面是为了满足自己的好奇心，一方面是为了提升了自己的提示词能力。 所以后续我胡写一系列文"
 license: ""
 images: []
 tags:

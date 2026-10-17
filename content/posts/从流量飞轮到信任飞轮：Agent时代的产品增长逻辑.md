@@ -7,6 +7,7 @@ draft: false
 author: "CRIO"
 authorLink: ""
 description: ""
+summary: "如果一个 Personal Agent 每天让你打开 20 次，另一个 Personal Agent 每天只需要和它交流两三次，哪一个产品做得更好？"
 license: ""
 images: []
 tags:

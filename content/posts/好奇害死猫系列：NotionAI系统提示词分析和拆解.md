@@ -7,6 +7,7 @@ draft: false
 author: CRIO
 authorLink: ""
 description: ""
+summary: "上一篇的好奇害死猫系列：Dia系统提示词分析和拆解给公司内的小伙伴分享后，大家都觉得学习到了很多。 确实通过拆解和分析其他产品的系统提示词，给了我们产品在提示词设计上很多很好的借鉴和学习的榜样。 本周，我们开了半周的会讨论了产品的总体架构和"
 license: ""
 images: []
 tags:

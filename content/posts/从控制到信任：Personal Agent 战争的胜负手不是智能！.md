@@ -7,6 +7,7 @@ draft: false
 author: "CRIO"
 authorLink: ""
 description: "最近一个月，Grok Bot、Muse、Cue、Dots 密集发布，Personal Agent 突然热闹起来。表面看它们在比谁更聪明、工具更全、Memory 更强，但真正的胜负手可能不是智能，而是信任。Chatbot 竞争回答能力，Agent 竞争行动能力，Personal Agent 竞争的则是\"被托付的能力\"——问题已从\"它能不能做到\"，变成\"即使它能做到，我敢不敢让它做\"，这正是当下的 Trust Gap。现实中，人对工具只需可靠与可预测，并不需要太多信任；对宠物因自主性出现，才开始引入意图、历史与关系；对人，信任最终指向委托。人与 Agent 的信任可拆成六层：能力、可预测、意图、边界、委托、关系。四款产品恰好代表四种关系：Grok Bot 像同事（角色信任），Muse 像管家（关系信任），Cue 像代理人（委托与身份信任），Dots 像\"越来越懂我的 AI\"（上下文信任）。过去几十年，人机关系的关键词是 Control；而 Agent 第一次让中间出现了一个拥有自主性的主体，关键词正从 Control 走向 Trust。真正成熟的 Personal Agent，不一定最聪明，而是最值得被托付的那个。"
+summary: "最近一个月，Grok Bot、Muse、Cue、Dots 密集发布，Personal Agent 突然热闹起来。表面看它们在比谁更聪明、工具更全、Memory 更强，但真正的胜负手可能不是智能，而是信任。Chatbot 竞争回答能力，Agent 竞争行动能力，Personal Agent 竞争的则是'被托付的能力'——问题已从'它能不能做到'，变成'即使它能做到，我敢不敢让它做'，这正是当下的 Trust Gap。现实中，人对工具只需可靠与可预测，并不需要太多信任；对宠物因自主性出现，才开始引入意图、历史与关系；对人，信任最终指向委托。人与 Agent 的信任可拆成六层：能力、可预测、意图、边界、委托、关系。四款产品恰好代表四种关系：Grok Bot 像同事（角色信任），Muse 像管家（关系信任），Cue 像代理人（委托与身份信任），Dots 像'越来越懂我的 AI'（上下文信任）。过去几十年，人机关系的关键词是 Control；而 Agent 第一次让中间出现了一个拥有自主性的主体，关键词正从 Control 走向 Trust。真正成熟的 Personal Agent，不一定最聪明，而是最值得被托付的那个。"
 license: ""
 images: []
 tags:

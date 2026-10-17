@@ -7,6 +7,7 @@ draft: false
 author: "CRIO"
 authorLink: ""
 description: "本文从 Meta 的个人 AI Agent 产品 Muse 和苹果首款折叠屏手机 Duo 出发，重新审视已经存在四十多年的个人计算机。作者认为，这一轮真正的变化不是手机更强或折叠屏更大，而是人可能不再是计算机的主要操作者——Agent 开始拥有运行在云端的计算机，人的角色也从 Operator（操作者）变成 Supervisor（监督者）。由此，PC 可能从一台物理机器变成一份属于个人的计算环境，走向 Personal Computer 的云化；Duo 的定位也不再是能变成电脑的手机，而是 Personal Agent Terminal（个人 Agent 终端）。文章进一步推演了操作系统从 Human Interface 转向 Agent Runtime、应用从 App 变成 Agent 可调用的 Tool，以及硬件、软件与工作方式可能发生的连锁变化。"
+summary: "本文从 Meta 的个人 AI Agent 产品 Muse 和苹果首款折叠屏手机 Duo 出发，重新审视已经存在四十多年的个人计算机。作者认为，这一轮真正的变化不是手机更强或折叠屏更大，而是人可能不再是计算机的主要操作者——Agent 开始拥有运行在云端的计算机，人的角色也从 Operator（操作者）变成 Supervisor（监督者）。由此，PC 可能从一台物理机器变成一份属于个人的计算环境，走向 Personal Computer 的云化；Duo 的定位也不再是能变成电脑的手机，而是 Personal Agent Terminal（个人 Agent 终端）。文章进一步推演了操作系统从 Human Interface 转向 Agent Runtime、应用从 App 变成 Agent 可调用的 Tool，以及硬件、软件与工作方式可能发生的连锁变化。"
 license: ""
 images: []
 tags:

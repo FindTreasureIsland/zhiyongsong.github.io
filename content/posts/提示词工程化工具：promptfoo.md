@@ -7,6 +7,7 @@ draft: false
 author: CRIO
 authorLink: ""
 description: ""
+summary: "promptfoo 是一个用于评估和红队测试 LLM 应用的 CLI 和库。 promptfoo的主要功能："
 license: ""
 images: []
 tags:

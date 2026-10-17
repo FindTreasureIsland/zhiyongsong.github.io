@@ -7,6 +7,7 @@ draft: false
 author: "CRIO"
 authorLink: ""
 description: ""
+summary: "前段时间看到千问Qwen3.8发布的视频，里面有一个很打动人的表达：AI 开始替人干活以后，人终于可以从电脑和手机前离开，重新回到生活。"
 license: ""
 images: []
 tags:
