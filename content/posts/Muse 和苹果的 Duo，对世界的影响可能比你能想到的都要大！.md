@@ -15,8 +15,7 @@ tags:
   - 个人计算机
 categories:
   - 技术
-featuredImage: https://raw.githubusercontent.com/FindTreasureIsland/imagebed/master/1-14.jpeg
-featuredImagePreview: https://raw.githubusercontent.com/FindTreasureIsland/imagebed/master/1-14.jpeg
+featureimage: https://raw.githubusercontent.com/FindTreasureIsland/imagebed/master/1-14.jpeg
 hiddenFromHomePage: false
 hiddenFromSearch: false
 twemoji: false

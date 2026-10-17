@@ -3,5 +3,12 @@
 /resources/
 .hugo_build.lock
 
+# 部署仓库：public/ 是独立 git 仓库，绝不从外层仓库跟踪
+public/
+
+# Blowfish 主题的文档与示例资源，不需要纳入版本管理
+themes/blowfish/exampleSite/
+themes/blowfish/images/
+
 # OS generated files
 .DS_Store

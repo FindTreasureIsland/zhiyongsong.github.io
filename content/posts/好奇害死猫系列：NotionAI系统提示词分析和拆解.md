@@ -15,8 +15,7 @@ tags:
   - AI工具
 categories:
   - 产品
-featuredImage: https://picx.zhimg.com/70/v2-0e5b4c732f2420b6a4a0a17021bd24fb_1440w.avis?source=172ae18b&biz_tag=Post
-featuredImagePreview: ""
+featureimage: https://picx.zhimg.com/70/v2-0e5b4c732f2420b6a4a0a17021bd24fb_1440w.avis?source=172ae18b&biz_tag=Post
 hiddenFromHomePage: false
 hiddenFromSearch: false
 twemoji: false

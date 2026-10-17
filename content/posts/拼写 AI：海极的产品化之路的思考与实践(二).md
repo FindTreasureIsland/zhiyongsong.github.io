@@ -14,8 +14,7 @@ tags:
   - 海极是家好公司
 categories:
   - 创业
-featuredImage: https://picx.zhimg.com/70/v2-3b768c24cb8ca9d3aba780e87b6574b3_1440w.avis?source=172ae18b&biz_tag=Post
-featuredImagePreview: ""
+featureimage: https://picx.zhimg.com/70/v2-3b768c24cb8ca9d3aba780e87b6574b3_1440w.avis?source=172ae18b&biz_tag=Post
 hiddenFromHomePage: false
 hiddenFromSearch: false
 twemoji: false

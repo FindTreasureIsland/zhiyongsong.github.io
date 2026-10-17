@@ -16,8 +16,7 @@ tags:
 categories:
   - 产品
   - 创业
-featuredImage: https://picx.zhimg.com/70/v2-a1e4ae47ecc8713a3735fb5040b46ef9_1440w.avis?source=172ae18b&biz_tag=Post
-featuredImagePreview: ""
+featureimage: https://picx.zhimg.com/70/v2-a1e4ae47ecc8713a3735fb5040b46ef9_1440w.avis?source=172ae18b&biz_tag=Post
 hiddenFromHomePage: false
 hiddenFromSearch: false
 twemoji: false

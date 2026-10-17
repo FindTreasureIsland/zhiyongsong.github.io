@@ -15,8 +15,7 @@ tags:
   - AI工具
 categories:
   - 创业
-featuredImage: https://pic1.zhimg.com/70/v2-a816141683ff94aa678d757f64f64a96_1440w.avis?source=172ae18b&biz_tag=Post
-featuredImagePreview: ""
+featureimage: https://pic1.zhimg.com/70/v2-a816141683ff94aa678d757f64f64a96_1440w.avis?source=172ae18b&biz_tag=Post
 hiddenFromHomePage: false
 hiddenFromSearch: false
 twemoji: false

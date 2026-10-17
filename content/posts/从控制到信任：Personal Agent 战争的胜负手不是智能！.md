@@ -15,8 +15,7 @@ tags:
   - 产品设计
 categories:
   - 产品
-featuredImage: https://raw.githubusercontent.com/FindTreasureIsland/imagebed/master/1-13.jpeg
-featuredImagePreview: https://raw.githubusercontent.com/FindTreasureIsland/imagebed/master/1-13.jpeg
+featureimage: https://raw.githubusercontent.com/FindTreasureIsland/imagebed/master/1-13.jpeg
 hiddenFromHomePage: false
 hiddenFromSearch: false
 twemoji: false

@@ -15,8 +15,7 @@ tags:
   - Personal Agent
 categories:
   - 产品
-featuredImage: https://raw.githubusercontent.com/FindTreasureIsland/imagebed/master/1-12.jpeg
-featuredImagePreview: https://raw.githubusercontent.com/FindTreasureIsland/imagebed/master/1-12.jpeg
+featureimage: https://raw.githubusercontent.com/FindTreasureIsland/imagebed/master/1-12.jpeg
 hiddenFromHomePage: false
 hiddenFromSearch: false
 twemoji: false

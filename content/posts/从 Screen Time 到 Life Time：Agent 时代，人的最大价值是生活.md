@@ -15,8 +15,7 @@ tags:
   - 数字生活
 categories:
   - 感想
-featuredImage: https://raw.githubusercontent.com/FindTreasureIsland/imagebed/master/20261017113128692.png
-featuredImagePreview: https://raw.githubusercontent.com/FindTreasureIsland/imagebed/master/20261017113128692.png
+featureimage: https://raw.githubusercontent.com/FindTreasureIsland/imagebed/master/20261017113128692.png
 hiddenFromHomePage: false
 hiddenFromSearch: false
 twemoji: false

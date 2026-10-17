@@ -14,8 +14,7 @@ tags:
 categories:
   - 产品
   - 技术
-featuredImage: https://pic1.zhimg.com/70/v2-bda2c57d9737a47e2124afb9139d54d0_1440w.avis?source=172ae18b&biz_tag=Post
-featuredImagePreview: ""
+featureimage: https://pic1.zhimg.com/70/v2-bda2c57d9737a47e2124afb9139d54d0_1440w.avis?source=172ae18b&biz_tag=Post
 hiddenFromHomePage: false
 hiddenFromSearch: false
 twemoji: false
