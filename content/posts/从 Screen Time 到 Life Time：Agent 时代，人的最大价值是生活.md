@@ -9,7 +9,10 @@ authorLink: ""
 description: ""
 license: ""
 images: []
-tags: []
+tags:
+  - 注意力经济
+  - Agent 时代
+  - 数字生活
 categories:
   - 感想
 featuredImage: https://raw.githubusercontent.com/FindTreasureIsland/imagebed/master/20261017113128692.png
