@@ -61,3 +61,20 @@ body:has(.landing-home) #main-content > article.landing-home > section {
 .toc-inside #TableOfContentsMobile a:hover {
   font-weight: 700;
 }
+
+/* 文章正文：两端对齐，中文排版更规整 */
+.article-content {
+  text-align: justify;
+  text-justify: inter-ideograph;
+  word-break: break-word;
+}
+
+/* 代码、表格、列表本身不参与两端对齐 */
+.article-content pre,
+.article-content code,
+.article-content table,
+.article-content ul,
+.article-content ol,
+.article-content blockquote {
+  text-align: left;
+}
