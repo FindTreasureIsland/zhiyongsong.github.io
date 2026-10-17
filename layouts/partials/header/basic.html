@@ -1,0 +1,55 @@
+<div class="main-menu flex items-center w-full gap-2 p-1 pl-0">
+  {{/* 左侧：图标 + 站点名，点击回到博客首页 blog.html */}}
+  <a href="/blog.html" class="flex items-center gap-2 shrink-0" aria-label="{{ .Site.Title }}">
+    <img
+      src="{{ "images/logoicon.png" | relURL }}"
+      alt=""
+      class="nozoom h-9 w-9 object-contain"
+      width="36"
+      height="36">
+    <span class="text-base font-medium truncate min-w-0">{{ .Site.Title | markdownify }}</span>
+  </a>
+
+  {{/* 中部：主导航菜单 */}}
+  <div class="hidden md:flex flex-1 justify-center">
+    {{ partial "header/components/desktop-menu.html" . }}
+  </div>
+  <div class="flex md:hidden ms-auto">
+    {{ partial "header/components/mobile-menu.html" . }}
+  </div>
+
+  {{/* 右侧：夜间模式、GitHub、X */}}
+  <div class="hidden md:flex items-center gap-3 shrink-0">
+    <button
+      id="appearance-switcher"
+      aria-label="{{ i18n "footer.dark_appearance" }}"
+      type="button"
+      class="text-sm bf-icon-color-hover"
+      title="{{ i18n "footer.dark_appearance" }}">
+      <div class="flex items-center justify-center dark:hidden">
+        {{ partial "icon.html" "moon" }}
+      </div>
+      <div class="items-center justify-center hidden dark:flex">
+        {{ partial "icon.html" "sun" }}
+      </div>
+    </button>
+    <a
+      href="https://github.com/FindTreasureIsland"
+      target="_blank"
+      rel="me noopener noreferrer"
+      aria-label="GitHub"
+      title="GitHub"
+      class="bf-icon-color-hover">
+      {{ partial "icon.html" "github" }}
+    </a>
+    <a
+      href="https://x.com/splitwrite"
+      target="_blank"
+      rel="me noopener noreferrer"
+      aria-label="X"
+      title="X"
+      class="bf-icon-color-hover">
+      {{ partial "icon.html" "x-twitter" }}
+    </a>
+  </div>
+</div>

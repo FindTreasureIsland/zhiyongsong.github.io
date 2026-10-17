@@ -1,0 +1,36 @@
+/* 首页 Landing 布局：顶部导航压在深色星空背景上，改用白色文字 */
+body:has(.landing-home) header .main-menu,
+body:has(.landing-home) header .main-menu a,
+body:has(.landing-home) header .main-menu button,
+body:has(.landing-home) header .main-menu span {
+  color: #fff;
+}
+
+body:has(.landing-home) header .main-menu a:hover,
+body:has(.landing-home) header .main-menu button:hover {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+/* 图标跟随白色 */
+body:has(.landing-home) header .main-menu .icon svg {
+  fill: currentColor;
+}
+
+/* 首页：顶部导航固定在视口顶部，白色文字 */
+body:has(.landing-home) > header {
+  position: fixed;
+  inset-inline: 0;
+  top: 0;
+  z-index: 50;
+  padding-inline: 1.5rem;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.45), transparent);
+}
+
+@media (min-width: 768px) {
+  body:has(.landing-home) > header { padding-inline: 2rem; }
+}
+
+/* 固定导航后，首页内容需要让出空间 */
+body:has(.landing-home) #main-content > article.landing-home > section {
+  padding-top: 7rem;
+}
