@@ -100,7 +100,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
   [params.author]
     name = "CRIO"
     email = "alaiszy@gmail.com"
-    link = "http://findtreasureisland.github.io"
+    link = "http://findtreasureisland.github.io/blog.html"
 
   # 页面头部导航栏配置
   [params.header]
@@ -179,7 +179,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
   #  应用图标配置
   [params.app]
     # 当添加到 iOS 主屏幕或者 Android 启动器时的标题, 覆盖默认标题
-    title = "Find TreasureIsland金银岛"
+    title = "Find TreasureIsland"
 
     # 是否隐藏网站图标资源链接
     noFavicon = false
