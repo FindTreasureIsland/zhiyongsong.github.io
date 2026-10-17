@@ -21,8 +21,10 @@ title = "Find TreasureIsland"
   [params.author]
     name = "CRIO"
     email = "alaiszy@gmail.com"
-    headline = "Find TreasureIsland"
-    bio = "寻找金银岛，记录我们一路上的所思所想。"
+    image = "images/avatar.png"
+    headline = "寻找金银岛，记录我们一路上的所思所想。"
+    bio = "一个不断寻找的产品人。关注 AI Agent、个人计算机的增长与信任。"
     links = [
       { github = "https://github.com/FindTreasureIsland" },
+      { email = "mailto:alaiszy@gmail.com" },
     ]

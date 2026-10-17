@@ -1,0 +1,17 @@
+/* 首页整站背景：降低白色遮罩强度，让海洋背景更清晰 */
+#background-canvas > div {
+  background-color: rgba(250, 250, 250, 0.55);
+}
+
+html.dark #background-canvas > div {
+  background-color: rgba(38, 38, 38, 0.65);
+}
+
+/* 首页头部的名字与简介加一点阴影，在背景图上更清晰 */
+#main-content article header h1 {
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.28);
+}
+
+#main-content article header h2 {
+  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.22);
+}
