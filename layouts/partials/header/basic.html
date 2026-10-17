@@ -10,46 +10,28 @@
     <span class="text-base font-medium truncate min-w-0">{{ .Site.Title | markdownify }}</span>
   </a>
 
-  {{/* 中部：主导航菜单 */}}
-  <div class="hidden md:flex flex-1 justify-center">
-    {{ partial "header/components/desktop-menu.html" . }}
-  </div>
-  <div class="flex md:hidden ms-auto">
-    {{ partial "header/components/mobile-menu.html" . }}
-  </div>
-
-  {{/* 右侧：夜间模式、GitHub、X */}}
-  <div class="hidden md:flex items-center gap-3 shrink-0">
-    <button
-      id="appearance-switcher"
-      aria-label="{{ i18n "footer.dark_appearance" }}"
-      type="button"
-      class="text-sm bf-icon-color-hover"
-      title="{{ i18n "footer.dark_appearance" }}">
-      <div class="flex items-center justify-center dark:hidden">
-        {{ partial "icon.html" "moon" }}
-      </div>
-      <div class="items-center justify-center hidden dark:flex">
-        {{ partial "icon.html" "sun" }}
-      </div>
-    </button>
-    <a
-      href="https://github.com/FindTreasureIsland"
-      target="_blank"
-      rel="me noopener noreferrer"
-      aria-label="GitHub"
-      title="GitHub"
-      class="bf-icon-color-hover">
-      {{ partial "icon.html" "github" }}
-    </a>
-    <a
-      href="https://x.com/splitwrite"
-      target="_blank"
-      rel="me noopener noreferrer"
-      aria-label="X"
-      title="X"
-      class="bf-icon-color-hover">
-      {{ partial "icon.html" "x-twitter" }}
-    </a>
+  {{/* 右侧：导航菜单 + 搜索 + 夜间模式 */}}
+  <div class="flex items-center gap-3 ms-auto">
+    <div class="hidden md:flex">
+      {{ partial "header/components/desktop-menu.html" . }}
+    </div>
+    <div class="flex md:hidden">
+      {{ partial "header/components/mobile-menu.html" . }}
+    </div>
+    <div class="hidden md:flex items-center">
+      <button
+        id="appearance-switcher"
+        aria-label="{{ i18n "footer.dark_appearance" }}"
+        type="button"
+        class="text-sm bf-icon-color-hover"
+        title="{{ i18n "footer.dark_appearance" }}">
+        <div class="flex items-center justify-center dark:hidden">
+          {{ partial "icon.html" "moon" }}
+        </div>
+        <div class="items-center justify-center hidden dark:flex">
+          {{ partial "icon.html" "sun" }}
+        </div>
+      </button>
+    </div>
   </div>
 </div>
