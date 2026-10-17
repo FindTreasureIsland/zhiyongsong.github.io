@@ -1,8 +1,8 @@
 ---
 title: 从流量飞轮到信任飞轮：Agent时代的产品增长逻辑
 subtitle: ""
-date: 2026-10-17T00:00:00+08:00
-lastmod: 2026-10-17T00:00:00+08:00
+date: 2026-10-05T00:00:00+08:00
+lastmod: 2026-10-05T00:00:00+08:00
 draft: false
 author: "CRIO"
 authorLink: ""

@@ -1,8 +1,8 @@
 ---
 title: 从 Screen Time 到 Life Time：Agent 时代，人的最大价值是生活
 subtitle: ""
-date: 2026-10-17T00:00:00+08:00
-lastmod: 2026-10-17T00:00:00+08:00
+date: 2026-10-07T00:00:00+08:00
+lastmod: 2026-10-07T00:00:00+08:00
 draft: false
 author: "CRIO"
 authorLink: ""

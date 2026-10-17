@@ -1,8 +1,8 @@
 ---
 title: 从控制到信任：Personal Agent 战争的胜负手不是智能！
 subtitle: ""
-date: 2026-10-17T00:00:00+08:00
-lastmod: 2026-10-17T00:00:00+08:00
+date: 2026-10-04T00:00:00+08:00
+lastmod: 2026-10-04T00:00:00+08:00
 draft: false
 author: "CRIO"
 authorLink: ""
