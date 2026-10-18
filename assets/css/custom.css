@@ -1,26 +1,36 @@
-/* ===== 全站顶部导航：固定 + 深色渐变 + 白色文字（首页与内页一致） ===== */
+/* ===== 全站顶部导航：固定 + 模糊背景 + 白色文字（首页与内页一致） ===== */
 body > header {
   position: fixed;
   inset-inline: 0;
   top: 0;
   z-index: 50;
   padding-inline: 1.5rem;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.35) 60%, transparent);
-  backdrop-filter: blur(6px);
-  -webkit-backdrop-filter: blur(6px);
+  /* 只保留模糊效果，不使用渐变底色 */
+  background: transparent;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 
 @media (min-width: 768px) {
   body > header { padding-inline: 2rem; }
 }
 
-/* 导航文字与图标统一为白色 */
-body > header .main-menu,
-body > header .main-menu a,
-body > header .main-menu button,
-body > header .main-menu span,
-body > header .main-menu kbd {
+/* 首页（星空背景）：导航文字与图标用白色 */
+body:has(.landing-home) > header .main-menu,
+body:has(.landing-home) > header .main-menu a,
+body:has(.landing-home) > header .main-menu button,
+body:has(.landing-home) > header .main-menu span,
+body:has(.landing-home) > header .main-menu kbd {
   color: #fff;
+}
+
+/* 内页（浅色背景）：导航文字用深色 */
+body:not(:has(.landing-home)) > header .main-menu,
+body:not(:has(.landing-home)) > header .main-menu a,
+body:not(:has(.landing-home)) > header .main-menu button,
+body:not(:has(.landing-home)) > header .main-menu span,
+body:not(:has(.landing-home)) > header .main-menu kbd {
+  color: #262626;
 }
 
 body > header .main-menu .icon svg {
@@ -35,16 +45,21 @@ body > header .main-menu button:hover {
   font-weight: 700;
 }
 
-/* 搜索按钮在深色导航上改为描边样式 */
-body > header #search-button {
+/* 搜索按钮：首页深色描边，内页浅色描边 */
+body:has(.landing-home) > header #search-button {
   border-color: rgba(255, 255, 255, 0.35);
   background: rgba(255, 255, 255, 0.1);
   color: #fff;
 }
 
+body:not(:has(.landing-home)) > header #search-button {
+  border-color: rgba(38, 38, 38, 0.2);
+  background: rgba(0, 0, 0, 0.03);
+  color: #262626;
+}
+
 body > header #search-button:hover {
   border-color: var(--link-hover);
-  background: rgba(255, 255, 255, 0.18);
   color: var(--link-hover);
 }
 
