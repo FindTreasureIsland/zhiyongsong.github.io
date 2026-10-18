@@ -24,13 +24,22 @@ body:has(.landing-home) > header .main-menu kbd {
   color: #fff;
 }
 
-/* 内页（浅色背景）：导航文字用深色 */
-body:not(:has(.landing-home)) > header .main-menu,
-body:not(:has(.landing-home)) > header .main-menu a,
-body:not(:has(.landing-home)) > header .main-menu button,
-body:not(:has(.landing-home)) > header .main-menu span,
-body:not(:has(.landing-home)) > header .main-menu kbd {
+/* 内页浅色模式：导航文字用深色 */
+html:not(.dark) body:not(:has(.landing-home)) > header .main-menu,
+html:not(.dark) body:not(:has(.landing-home)) > header .main-menu a,
+html:not(.dark) body:not(:has(.landing-home)) > header .main-menu button,
+html:not(.dark) body:not(:has(.landing-home)) > header .main-menu span,
+html:not(.dark) body:not(:has(.landing-home)) > header .main-menu kbd {
   color: #262626;
+}
+
+/* 内页深色模式：导航文字用白色 */
+html.dark body:not(:has(.landing-home)) > header .main-menu,
+html.dark body:not(:has(.landing-home)) > header .main-menu a,
+html.dark body:not(:has(.landing-home)) > header .main-menu button,
+html.dark body:not(:has(.landing-home)) > header .main-menu span,
+html.dark body:not(:has(.landing-home)) > header .main-menu kbd {
+  color: #fff;
 }
 
 body > header .main-menu .icon svg {
@@ -52,10 +61,16 @@ body:has(.landing-home) > header #search-button {
   color: #fff;
 }
 
-body:not(:has(.landing-home)) > header #search-button {
+html:not(.dark) body:not(:has(.landing-home)) > header #search-button {
   border-color: rgba(38, 38, 38, 0.2);
   background: rgba(0, 0, 0, 0.03);
   color: #262626;
+}
+
+html.dark body:not(:has(.landing-home)) > header #search-button {
+  border-color: rgba(255, 255, 255, 0.35);
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
 }
 
 body > header #search-button:hover {
