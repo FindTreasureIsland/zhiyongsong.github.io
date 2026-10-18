@@ -18,7 +18,7 @@
     <div class="flex md:hidden">
       {{ partial "header/components/mobile-menu.html" . }}
     </div>
-    <div class="hidden md:flex items-center">
+    <div class="hidden md:flex items-center gap-4">
       <button
         id="appearance-switcher"
         aria-label="{{ i18n "footer.dark_appearance" }}"
@@ -32,6 +32,21 @@
           {{ partial "icon.html" "sun" }}
         </div>
       </button>
+      {{ if .Site.Params.enableSearch | default false }}
+        <button
+          id="search-button"
+          aria-label="{{ i18n "search.open_button_title" }}"
+          class="flex items-center gap-2 rounded-lg border px-2 py-1 text-sm transition-colors"
+          title="{{ i18n "search.open_button_title" }}">
+          {{ partial "icon.html" "search" }}
+          <kbd
+            id="search-shortcut-hint"
+            class="pointer-events-none font-sans text-xs"
+            aria-hidden="true">
+            ⌘K
+          </kbd>
+        </button>
+      {{ end }}
     </div>
   </div>
 </div>

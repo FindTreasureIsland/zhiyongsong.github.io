@@ -1,41 +1,63 @@
-/* 首页 Landing 布局：顶部导航压在深色星空背景上，改用白色文字 */
-body:has(.landing-home) header .main-menu,
-body:has(.landing-home) header .main-menu a,
-body:has(.landing-home) header .main-menu button,
-body:has(.landing-home) header .main-menu span {
-  color: #fff;
-}
-
-body:has(.landing-home) header .main-menu a:hover,
-body:has(.landing-home) header .main-menu button:hover {
-  color: rgba(255, 255, 255, 0.75);
-}
-
-/* 图标跟随白色 */
-body:has(.landing-home) header .main-menu .icon svg {
-  fill: currentColor;
-}
-
-/* 首页：顶部导航固定在视口顶部，白色文字 */
-body:has(.landing-home) > header {
+/* ===== 全站顶部导航：固定 + 深色渐变 + 白色文字（首页与内页一致） ===== */
+body > header {
   position: fixed;
   inset-inline: 0;
   top: 0;
   z-index: 50;
   padding-inline: 1.5rem;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.45), transparent);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.35) 60%, transparent);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
 }
 
 @media (min-width: 768px) {
-  body:has(.landing-home) > header { padding-inline: 2rem; }
+  body > header { padding-inline: 2rem; }
 }
 
-/* 固定导航后，首页内容需要让出空间 */
+/* 导航文字与图标统一为白色 */
+body > header .main-menu,
+body > header .main-menu a,
+body > header .main-menu button,
+body > header .main-menu span,
+body > header .main-menu kbd {
+  color: #fff;
+}
+
+body > header .main-menu .icon svg {
+  fill: currentColor;
+}
+
+/* 导航悬停：品牌橙 + 加粗 */
+body > header .main-menu a:hover,
+body > header .main-menu a:hover *,
+body > header .main-menu button:hover {
+  color: var(--link-hover);
+  font-weight: 700;
+}
+
+/* 搜索按钮在深色导航上改为描边样式 */
+body > header #search-button {
+  border-color: rgba(255, 255, 255, 0.35);
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+
+body > header #search-button:hover {
+  border-color: var(--link-hover);
+  background: rgba(255, 255, 255, 0.18);
+  color: var(--link-hover);
+}
+
+/* 固定导航后，内容整体下移 */
+#main-content {
+  padding-top: 4.75rem;
+}
+
 body:has(.landing-home) #main-content > article.landing-home > section {
-  padding-top: 7rem;
+  padding-top: 3rem;
 }
 
-/* 首页大标题前的 GIF 图标：跟随标题字号缩放 */
+/* ===== 首页大标题前的 GIF 图标 ===== */
 .landing-title-logo {
   display: inline-flex;
   align-items: center;
@@ -56,20 +78,19 @@ body:has(.landing-home) #main-content > article.landing-home > section {
   }
 }
 
-/* 文章右侧大纲：鼠标悬停时加粗 */
+/* ===== 文章右侧大纲：悬停加粗 ===== */
 #TableOfContents a:hover,
 .toc-inside #TableOfContentsMobile a:hover {
   font-weight: 700;
 }
 
-/* 文章正文：两端对齐，中文排版更规整 */
+/* ===== 文章正文：两端对齐 ===== */
 .article-content {
   text-align: justify;
   text-justify: inter-ideograph;
   word-break: break-word;
 }
 
-/* 代码、表格、列表本身不参与两端对齐 */
 .article-content pre,
 .article-content code,
 .article-content table,
@@ -79,21 +100,17 @@ body:has(.landing-home) #main-content > article.landing-home > section {
   text-align: left;
 }
 
-/* ===== 统一链接交互：悬停时变为品牌橙并加粗 ===== */
+/* ===== 统一链接交互：悬停橙色 + 加粗 ===== */
 :root {
   --link-hover: #f59800;
 }
 
-/* 正文内链接 */
 .article-content a:hover,
 .article-content a:hover * {
   color: var(--link-hover);
   font-weight: 700;
 }
 
-/* 顶部导航、页脚、大纲、标签、分类、分页等所有站内链接 */
-header a:hover,
-header a:hover *,
 footer a:hover,
 footer a:hover *,
 #TableOfContents a:hover,
@@ -105,7 +122,6 @@ article a:hover:not(.article-content a) {
   font-weight: 700;
 }
 
-/* 卡片与列表标题 */
 .article-link a:hover,
 .article-link a:hover *,
 .article-card a:hover,
@@ -114,8 +130,6 @@ article a:hover:not(.article-content a) {
   font-weight: 700;
 }
 
-/* 按钮类元素保持自身样式 */
-header button:hover,
 footer button:hover {
   color: var(--link-hover);
 }
