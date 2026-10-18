@@ -15,8 +15,7 @@ tags:
   - 知乎
 categories:
   - 创业
-featuredImage: https://raw.githubusercontent.com/FindTreasureIsland/imagebed/master/20261018075543923.png
-featuredImagePreview: https://raw.githubusercontent.com/FindTreasureIsland/imagebed/master/20261018075543923.png
+featureimage: https://raw.githubusercontent.com/FindTreasureIsland/imagebed/master/20261018075543923.png
 hiddenFromHomePage: false
 hiddenFromSearch: false
 twemoji: false
