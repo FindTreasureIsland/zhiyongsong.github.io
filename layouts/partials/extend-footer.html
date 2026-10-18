@@ -6,6 +6,9 @@
     var toggle = document.getElementById("music-toggle");
     if (!audio || !toggle) return;
 
+    // 背景音乐音量 30%
+    audio.volume = 0.3;
+
     var KEY = "bg-music-enabled";
     // 默认开启；用户显式关闭过则保持关闭
     var enabled = localStorage.getItem(KEY) !== "false";
