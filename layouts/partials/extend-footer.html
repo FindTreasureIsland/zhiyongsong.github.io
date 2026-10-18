@@ -1,0 +1,77 @@
+{{/* 背景音乐：默认开启，浏览器阻止自动播放时等待首次交互 */}}
+<audio id="bg-music" src="/backsound.mp3" loop preload="auto"></audio>
+<script>
+  (function () {
+    var audio = document.getElementById("bg-music");
+    var toggle = document.getElementById("music-toggle");
+    if (!audio || !toggle) return;
+
+    var KEY = "bg-music-enabled";
+    // 默认开启；用户显式关闭过则保持关闭
+    var enabled = localStorage.getItem(KEY) !== "false";
+
+    function updateIcon() {
+      var on = toggle.querySelector(".music-on");
+      var off = toggle.querySelector(".music-off");
+      if (!on || !off) return;
+      on.style.display = enabled ? "" : "none";
+      off.style.display = enabled ? "none" : "";
+      toggle.setAttribute("aria-pressed", String(enabled));
+      toggle.title = enabled ? "关闭背景音乐" : "开启背景音乐";
+      toggle.setAttribute("aria-label", toggle.title);
+    }
+
+    function play() {
+      if (!enabled) return;
+      var p = audio.play();
+      if (p && p.catch) p.catch(function () {});
+    }
+
+    function pause() {
+      audio.pause();
+    }
+
+    updateIcon();
+    if (enabled) {
+      // 尝试自动播放；被拦截则在首次交互后开始
+      var started = false;
+      var tryStart = function () {
+        if (started || !enabled) return;
+        var p = audio.play();
+        if (!p || !p.catch) { started = true; return; }
+        p.then(function () { started = true; }).catch(function () {});
+      };
+      tryStart();
+      ["click", "touchstart", "keydown", "scroll"].forEach(function (evt) {
+        document.addEventListener(evt, function () {
+          if (!started) tryStart();
+        }, { once: false, passive: true });
+      });
+    }
+
+    toggle.addEventListener("click", function () {
+      enabled = !enabled;
+      localStorage.setItem(KEY, String(enabled));
+      updateIcon();
+      if (enabled) play(); else pause();
+    });
+  })();
+</script>
+<style>
+  /* 关闭状态用删除线表达 */
+  #music-toggle .music-off .icon svg {
+    opacity: 0.55;
+  }
+  #music-toggle[aria-pressed="false"] {
+    position: relative;
+  }
+  #music-toggle[aria-pressed="false"]::after {
+    content: "";
+    position: absolute;
+    left: 8%;
+    right: 8%;
+    top: 50%;
+    border-top: 1.5px solid currentColor;
+    transform: rotate(-45deg);
+  }
+</style>

@@ -32,6 +32,21 @@
           {{ partial "icon.html" "sun" }}
         </div>
       </button>
+      {{/* 背景音乐开关：默认开启 */}}
+      <button
+        id="music-toggle"
+        type="button"
+        aria-label="背景音乐"
+        title="背景音乐"
+        aria-pressed="true"
+        class="text-sm bf-icon-color-hover">
+        <span class="music-on flex items-center justify-center">
+          {{ partial "icon.html" "music" }}
+        </span>
+        <span class="music-off items-center justify-center" style="display:none">
+          {{ partial "icon.html" "music" }}
+        </span>
+      </button>
       {{ if .Site.Params.enableSearch | default false }}
         <button
           id="search-button"
